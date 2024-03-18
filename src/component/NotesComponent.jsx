@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './NotesComponent.css';
 
 const NotesComponent = () => {
@@ -11,10 +12,8 @@ const NotesComponent = () => {
 
   const fetchNotes = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/notes', {
-      });
+      const response = await axios.post('http://localhost:3000/notes', {});
 
-      // Assuming your API response is an object with a 'notes' array
       if (Array.isArray(response.data.notes)) {
         setNotes(response.data.notes);
       } else {
@@ -30,10 +29,12 @@ const NotesComponent = () => {
       <h1>Notes</h1>
       <div className="notes-container">
         {notes.map(note => (
-          <div className="note-card" key={note._id}>
-            <h2 className="note-title">{note.title}</h2>
-            <p className="note-content">{note.content}</p>
-          </div>
+          
+            <div className="note-card">
+              <h2 className="note-title">{note.title}</h2>
+              <p className="note-content">{note.content}</p>
+            </div>
+          
         ))}
       </div>
     </div>

@@ -1,10 +1,29 @@
+    h1 {
+      padding: 10px;
+      margin-left: 5px;
+      color: rgb(143, 15, 228); /* Text color */
+      font-size: 36px; /* Font size */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+  .drop-shadow-text {
+      color: white; /* Text color */
+      font-size: 36px; /* Font size */
+      text-shadow: 4px 2px 4px rgba(0, 0, 0, 5);
+      letter-spacing: 8px; /* Drop shadow effect */
+  }
+
 .note-groups-container {
+  padding: 20px;
     display: flex;
+    padding: 14px;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   
   .note-group-card {
+    padding: 20px;
+    display: flex;
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -14,9 +33,16 @@
   }
   
   .note-group-title {
+    display: flex;
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
   
   /* Add more styles as needed */
-  
+
+  .jats {
+    border-radius: 8px;
+    padding: 6px;
+    background-color: rgba(220, 118, 245, 0.728);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
