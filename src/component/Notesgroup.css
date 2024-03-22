@@ -1,48 +1,78 @@
-    h1 {
-      padding: 10px;
-      margin-left: 5px;
-      color: rgb(143, 15, 228); /* Text color */
-      font-size: 36px; /* Font size */
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-  .drop-shadow-text {
-      color: white; /* Text color */
-      font-size: 36px; /* Font size */
-      text-shadow: 4px 2px 4px rgba(0, 0, 0, 5);
-      letter-spacing: 8px; /* Drop shadow effect */
-  }
-
-.note-groups-container {
+/* NoteGroupsPage.css */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
-    display: flex;
-    padding: 14px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .note-group-card {
-    padding: 20px;
-    display: flex;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-  }
-  
-  .note-group-title {
-    display: flex;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Add more styles as needed */
+}
 
-  .jats {
-    border-radius: 8px;
-    padding: 6px;
-    background-color: rgba(220, 118, 245, 0.728);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+.note-groups-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.note-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* NoteGroupsPage.css */
+
+.note-group-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.note-group-name a {
+  text-decoration: none;
+  color: #333; /* Change color as needed */
+}
+
+.note-group-name a:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.add-group-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.new-group-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-right: 10px;
+}
+
+.create-group-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.create-group-button:hover {
+  background-color: #0056b3;
+}
